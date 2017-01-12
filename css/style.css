@@ -1,0 +1,111 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+canvas {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay {
+  position: absolute;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.first {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.second {
+  text-align: center;
+  color: #ecf0f1;
+  line-height: normal;
+  display: flex;
+  white-space: nowrap;
+}
+
+.third {
+  display: flex;
+  background-color: #3498db;
+  color: #ecf0f1;
+}
+
+.forth {
+  display: flex;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.sixth {
+  display: flex;
+  background-color: #2ecc71;
+  color: #ecf0f1;
+}
+
+.seventh {
+  display: flex;
+  background-color: #e74c3c;
+  color: #ecf0f1;
+}
+
+.eightth {
+  display: flex;
+  background-image: url('../img/pattern.svg');
+  background-size: cover;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.text {
+  width: 100%;
+  height:auto;
+  overflow-x: auto;
+}
+
+.split {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.large {
+  font-size: 5rem;
+}
+
+.medium {
+  font-size: 3rem;
+}
+
+.normal {
+  font-size: 2rem;
+}
+
+.image .mockup {
+  max-width: 100%;
+  height: auto;
+}
+
+.block-revealer__element {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	pointer-events: none;
+	opacity: 0;
+}
