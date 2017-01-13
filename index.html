@@ -4,6 +4,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.1/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.3.1/sweetalert2.min.js"></script>
   </head>
   <body>
 
@@ -24,7 +27,7 @@
     <div class="third section">
       <div class="split">
         <div class="image">
-          <img src="./img/susi.png" class="mockup">
+          <img src="./img/susi.png" class="mockup hidden" id="susi">
         </div>
       </div>
       <div class="split">
@@ -39,14 +42,14 @@
       </div>
       <div class="split">
         <div class="image">
-          <img src="./img/r.png" class="mockup">
+          <img src="./img/r.png" class="mockup hidden" id="r">
         </div>
       </div>
     </div>
     <div class="fifth section">
       <div class="split">
         <div class="image">
-          <img src="./img/loklak.png" class="mockup">
+          <img src="./img/loklak.png" class="mockup hidden" id="loklak">
         </div>
       </div>
       <div class="split">
@@ -57,7 +60,7 @@
     <div class="sixth section">
       <div class="split">
         <div class="image">
-          <img src="./img/coala_color.svg" style="width: 480px; height: 480px;"  class="mockup">
+          <img src="./img/coala_color.svg" style="width: 480px; height: 480px;" class="mockup hidden" id="coala">
         </div>
       </div>
       <div class="split">
@@ -68,7 +71,7 @@
     <div class="seventh section">
       <div class="split">
         <div class="image">
-          <img src="./img/open_event.png" class="mockup">
+          <img src="./img/open_event.png" class="mockup hidden" id="openevent">
         </div>
       </div>
       <div class="split">
@@ -87,12 +90,13 @@
         <div class="medium text">Credits</div><br>
         <div class="text">I don't want to be a jerk who won't tell you what technologies are used.</div>
         <ul>
+          <li>Egg.js - up up down down left right left right b a - Konami code (shhhh... easter egg!)</li>
           <li>Codrops - Block Reveal</li>
           <li>Changing Color - Codepen</li>
           <li>Anime.js</li>
           <li>scrollMonitor.js</li>
           <li>normalize.css</li>
-          <li>Mockuphone.com (Phone mockups)</li>
+          <li>Mockuphone.com (Phone mockup hiddens)</li>
           <li>Brain</li>
           <li>Heart</li>
         </ul>
@@ -243,7 +247,7 @@
             watcher_4.enterViewport(function() {
     					rev9.reveal();
     					rev10.reveal();
-    					watcher_3.destroy();
+    					watcher_4.destroy();
     				});
             watcher_5.enterViewport(function() {
               rev11.reveal();
@@ -253,6 +257,17 @@
             watcher_6.enterViewport(function() {
               watcher_6.destroy();
             });
+            var egg = new Egg();
+            egg
+              .addCode("up,up,down,down,left,right,left,right,b,a", function() {
+                swal('Just one request', 'Can you please stop asking to post on twitter thanking FOSSAsia? That seems really bad. By the way, congrats on finding out this easter egg!');
+              }).listen();
+            var egg2 = new Egg();
+            egg2
+              .addCode("f,o,s,s,a,s,i,a", function() {
+                swal("Yippe! You did it. Thanks for coming from tweet.");
+              }).listen();
+
     </script>
   </body>
 </html>
