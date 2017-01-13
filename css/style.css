@@ -99,6 +99,10 @@ canvas {
   height: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 .block-revealer__element {
 	position: absolute;
 	top: 0;
